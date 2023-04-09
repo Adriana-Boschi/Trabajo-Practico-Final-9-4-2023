@@ -20,8 +20,7 @@ header div img class Imagen personajes {
 }
 
 header div img class Imagen logo {
-  width: 300px 
-  margin 10px
+  width: 300px margin 10px
 }
 
 /*Display Flex*/
@@ -64,25 +63,13 @@ a:-webkit-any-link {
   padding: 30px;
   margin: 20px;
 
-
-
 }
 
-.Sinopsis {
-
-
-  font-family: cursive;
-  font-size: 13px;
-  text-decoration: none;
-  justify-content: space-between;
-
-}
 
 .imagen-Sinopsis {
 
   height: 50px;
   width: 90px;
-
 
 }
 
@@ -100,7 +87,7 @@ a:-webkit-any-link {
 }
 
 .contenedor p {
-
+  font-family: cursive;
   padding: 10px;
   margin: 10px;
   text-decoration: none;
@@ -119,11 +106,10 @@ a:-webkit-any-link {
 .Personajes h2 {
   padding: 10px;
   margin: 5px;
-  background-color:rgba(41, 191, 236, 0.938);
+  background-color: rgba(41, 191, 236, 0.938);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border: 3px solid black;
-  font-size: 10px 
-  justify-content center;
+  font-size: 10px justify-content center;
   align-items: center;
 
 }
@@ -139,7 +125,7 @@ a:-webkit-any-link {
 
 /*Estilos para items de grid*/
 .grid-item {
-  background-color:rgba(112, 197, 223, 0.685);
+  background-color: rgba(112, 197, 223, 0.685);
   text-align: center;
   padding: 30px;
   border-radius: 10px;
@@ -172,13 +158,14 @@ a:-webkit-any-link {
 .miraLaSerie h2 {
   padding: 10px;
   margin: 5px;
-  background-color:rgba(41, 191, 236, 0.938);
+  background-color: rgba(41, 191, 236, 0.938);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border: 3px solid black;
   font-size: 15px;
- 
+
 }
-.contenedor1{
+
+.contenedor1 {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC2XqS9XUHnyf6NCu5_TNCQvJq-GBatwA_g&usqp=CAU);
 
 }
@@ -201,19 +188,13 @@ a:-webkit-any-link {
   padding: 30px;
   margin: 30px;
   justify-content: center;
-  display: flex;
-
-
-
+  display: flex
 }
+
 
 .contenedor2 {
-  display: flex
- 
-
-}
-.contenedor2{
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC2XqS9XUHnyf6NCu5_TNCQvJq-GBatwA_g&usqp=CAU);
+  display: flex
 }
 
 
@@ -262,6 +243,31 @@ footer div nav ul li {
   color: rgb(9, 168, 168);
   font-family: cursive;
 }
-footer div nav ul li svg{
-  color:black
+
+footer div nav ul li svg {
+  color: black
+}
+
+/*media query/punto de quiebre*/
+
+@media (max-widht: 480px) {
+
+  header {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC2XqS9XUHnyf6NCu5_TNCQvJq-GBatwA_g&usqp=CAU);
+
+    background-repeat: repeat;
+  }
+
+  .contenedor imagen-Sinopsis {
+
+    height: 5px;
+    width: 10px;
+
+  }
+
+  .contenedor p {
+    text-align: center;
+    flex-direction: column;
+
+  }
 }
