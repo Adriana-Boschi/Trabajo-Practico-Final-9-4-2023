@@ -66,7 +66,7 @@ a:-webkit-any-link {
 }
 
 
-.imagen-Sinopsis {
+.contendor imagen-sinopsis {
 
   height: 50px;
   width: 90px;
@@ -79,10 +79,13 @@ a:-webkit-any-link {
   background-color: rgba(41, 191, 236, 0.938);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border: 3px solid black;
-  font-size: 20px;
+  font-size: 25px;
   justify-content: center;
   align-items: center;
 
+
+
+  
 
 }
 
@@ -250,24 +253,31 @@ footer div nav ul li svg {
 
 /*media query/punto de quiebre*/
 
-@media (max-widht: 480px) {
+@media (max-width: 480px) {
 
   header {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC2XqS9XUHnyf6NCu5_TNCQvJq-GBatwA_g&usqp=CAU);
 
-    background-repeat: repeat;
+    background-image: repeat;
+    flex-direction: column;
   }
+  .contenedor{
+   justify-content: center;
+   flex-direction: column;
+  }
+  .imagen-sinopsis {
+    flex-direction: column;
+    justify-content: center;
 
-  .contenedor imagen-Sinopsis {
-
-    height: 5px;
-    width: 10px;
-
+    height: 190px;
+    width: 230px;
+  
   }
 
   .contenedor p {
-    text-align: center;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
 
   }
 }
